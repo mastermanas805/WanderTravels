@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Paris Christmas Tour Guide | WanderTravels</title>
+  <meta name="description" content="Your complete Paris Christmas tour guide: markets, landmarks, activities, dining, and travel tips with a festive theme." />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Inter:wght@400;600&display=swap" rel="stylesheet">
+  <style>
+    :root{
+      --red:#c62828;
+      --green:#2e7d32;
+      --gold:#c9a227;
+      --cream:#fffaf2;
+      --ink:#1b1b1f;
+    }
+    *{box-sizing:border-box}
+    html,body{margin:0;padding:0;color:var(--ink);font-family:Inter,system-ui,-apple-system,Segoe UI,Roboto,Arial,sans-serif;background:var(--cream)}
+    header.hero{position:relative;isolation:isolate;background:linear-gradient(135deg,var(--red),var(--green));color:white}
+    header.hero::after{content:"";position:absolute;inset:0;opacity:.2;background:radial-gradient(1200px 400px at -10% -10%,var(--gold),transparent),radial-gradient(800px 300px at 110% 10%,#fff,transparent)}
+    .container{max-width:1100px;margin:auto;padding:24px}
+    .nav{display:flex;gap:18px;flex-wrap:wrap;align-items:center;justify-content:space-between}
+    .brand{display:flex;align-items:center;gap:12px;font-family:"Playfair Display",serif;font-weight:700;font-size:22px}
+    .brand .dot{width:10px;height:10px;border-radius:50%;background:var(--gold);box-shadow:0 0 0 3px rgba(201,162,39,.25)}
+    .nav a{color:#fff;text-decoration:none;font-weight:600;opacity:.95}
+    .nav a:hover{opacity:1;text-decoration:underline}
+    .hero-inner{padding:56px 0 36px;display:grid;gap:18px}
+    .hero-inner h1{font-family:"Playfair Display",serif;font-size:40px;margin:0;line-height:1.1}
+    .hero-inner p{max-width:750px;margin:0;font-size:18px;opacity:.95}
+
+    .quick-badges{display:flex;gap:12px;flex-wrap:wrap;margin-top:8px}
+    .badge{background:rgba(255,255,255,.14);border:1px solid rgba(255,255,255,.35);padding:8px 12px;border-radius:999px;font-size:13px;backdrop-filter:blur(4px)}
+
+    .grid{display:grid;grid-template-columns:repeat(12,1fr);gap:20px}
+    section{scroll-margin-top:84px}
+    .card{background:#fff;border:1px solid #e7e2d9;border-radius:14px;box-shadow:0 8px 20px rgba(0,0,0,.04)}
+    .card h3{margin:0 0 8px;font-family:"Playfair Display",serif}
+    .card .p{margin:0}
+    .section-head{display:flex;align-items:end;justify-content:space-between;margin:8px 0 14px}
+    .section-head h2{font-family:"Playfair Display",serif;margin:0;font-size:28px}
+    .section-head .accent{height:8px;background:linear-gradient(90deg,var(--gold),var(--red),var(--green));border-radius:6px;flex:1;margin-left:14px;opacity:.75}
+
+    .pill{display:inline-block;padding:6px 10px;border-radius:999px;background:rgba(201,162,39,.1);border:1px solid rgba(201,162,39,.35);color:#6d5a15;font-size:12px;font-weight:600}
+    .list{display:grid;gap:14px}
+    .li{display:grid;gap:6px;padding:14px;border-radius:10px;border:1px dashed #e7e2d9}
+
+    .cta{margin:28px 0;display:flex;gap:12px;flex-wrap:wrap}
+    .btn{appearance:none;border:none;cursor:pointer;padding:12px 16px;border-radius:10px;font-weight:700}
+    .btn.primary{background:var(--gold);color:#2a230d}
+    .btn.primary:hover{filter:brightness(1.05)}
+    .btn.ghost{background:transparent;border:2px solid #fff;color:#fff}
+
+    footer{margin-top:40px;background:#111;color:#ddd}
+    footer a{color:#fff}
+
+    .note{font-size:13px;color:#5b5b66}
+
+    @media (max-width: 840px){
+      .hero-inner{padding:40px 0 24px}
+      .hero-inner h1{font-size:32px}
+      .grid{gap:14px}
+    }
+  </style>
+</head>
+<body>
+  <header class="hero">
+    <div class="container nav">
+      <div class="brand"><span class="dot"></span>WanderTravels</div>
+      <nav class="nav-links" aria-label="Primary">
+        <a href="#markets">Markets</a>
+        <a href="#landmarks">Landmarks</a>
+        <a href="#activities">Activities</a>
+        <a href="#dining">Dining</a>
+        <a href="#tips">Travel tips</a>
+      </nav>
+    </div>
+    <div class="container hero-inner">
+      <h1>Paris Christmas Tour Guide</h1>
+      <p>Embrace the magic of Noël in Paris. This curated full-day-and-beyond guide covers twinkling markets, illuminated icons, skating, chocolate tasting, cozy bistros, and savvy travel tips—all wrapped in festive red, green, and gold.</p>
+      <div class="quick-badges">
+        <span class="badge">Best time: late Nov – early Jan</span>
+        <span class="badge">Avg temps: 3–8°C</span>
+        <span class="badge">Neighborhoods: Champs-Élysées • Montmartre • Saint‑Germain</span>
+      </div>
+      <div class="cta">
+        <a class="btn primary" href="#markets">Start at the markets</a>
+        <a class="btn ghost" href="#tips">Read travel tips</a>
+      </div>
+    </div>
+  </header>
+
+  <main class="container" id="content">
+    <section id="markets" class="section">
+      <div class="section-head">
+        <h2>Christmas Markets</h2>
+        <div class="accent" aria-hidden="true"></div>
+      </div>
+      <div class="grid">
+        <article class="card" style="grid-column: span 7; padding:18px;">
+          <h3>La Magie de Noël, Tuileries Garden</h3>
+          <p class="p">A central, family-friendly village with artisan gifts, vin chaud, and a Ferris wheel view of the Louvre. Go at dusk for golden-hour photos.</p>
+          <ul class="list" aria-label="Highlights">
+            <li class="li"><span class="pill">Must try</span> Hot mulled wine, raclette, and crêpes suzette.</li>
+            <li class="li"><span class="pill">When</span> Late Nov – early Jan, daily till late evening.</li>
+            <li class="li"><span class="pill">Tip</span> Arrive via Concorde or Tuileries Métro to avoid long lines.</li>
+          </ul>
+        </article>
+        <article class="card" style="grid-column: span 5; padding:18px;">
+          <h3>Champs‑Élysées Pop‑ups</h3>
+          <p class="p">Smaller but dazzling with avenue lights leading to the Arc de Triomphe.</p>
+          <ul class="list">
+            <li class="li">Boutiques with French ornaments and gilded décor.</li>
+            <li class="li">Street performers on weekend evenings.</li>
+          </ul>
+        </article>
+        <article class="card" style="grid-column: span 6; padding:18px;">
+          <h3>Montmartre & Abbesses</h3>
+          <p class="p">Romantic village vibe beneath Sacré‑Cœur. Cobblestones, carousel, and local artisans.</p>
+          <ul class="list">
+            <li class="li">Photo spot: Place du Tertre at sunset.</li>
+            <li class="li">Nearby cafés for chocolat chaud and tarte tatin.</li>
+          </ul>
+        </article>
+        <article class="card" style="grid-column: span 6; padding:18px;">
+          <h3>Hôtel de Ville & Notre‑Dame area</h3>
+          <p class="p">Chalet stalls, skating nearby some years, and grand trees with elegant lighting.</p>
+          <ul class="list">
+            <li class="li">Combine with Île de la Cité strolls.</li>
+            <li class="li">Look for handcrafted nativity figures (santons).</li>
+          </ul>
+        </article>
+      </div>
+    </section>
+
+    <section id="landmarks" class="section">
+      <div class="section-head">
+        <h2>Landmarks in Lights</h2>
+        <div class="accent" aria-hidden="true"></div>
+      </div>
+      <div class="grid">
+        <article class="card" style="grid-column: span 7; padding:18px;">
+          <h3>Eiffel Tower & Trocadéro</h3>
+          <p class="p">Hourly sparkle after dark; winter air makes the shimmer crisp. Grab a warm galette from a nearby stand.</p>
+          <ul class="list">
+            <li class="li">Best viewpoint: Trocadéro steps or Bir‑Hakeim bridge.</li>
+            <li class="li">Timing: Blue hour into evening for contrasty photos.</li>
+          </ul>
+        </article>
+        <article class="card" style="grid-column: span 5; padding:18px;">
+          <h3>Galeries Lafayette Dome</h3>
+          <p class="p">A towering themed tree under an Art Nouveau dome, with rooftop terrace views of Paris.</p>
+          <ul class="list">
+            <li class="li">Window displays on Boulevard Haussmann are a holiday tradition.</li>
+            <li class="li">Free rooftop access; bring a scarf—winds can be brisk.</li>
+          </ul>
+        </article>
+        <article class="card" style="grid-column: span 6; padding:18px;">
+          <h3>Place Vendôme & Rue Saint‑Honoré</h3>
+          <p class="p">Elegant illuminations, luxury façades, and polished gold hues perfect for evening strolls.</p>
+          <ul class="list">
+            <li class="li">Look for sparkling wreaths and refined storefront garlands.</li>
+          </ul>
+        </article>
+        <article class="card" style="grid-column: span 6; padding:18px;">
+          <h3>Saint‑Germain‑des‑Prés</h3>
+          <p class="p">Literary cafés glow with warmth—ideal for slow evenings and people‑watching.</p>
+          <ul class="list">
+            <li class="li">Pair with a Seine riverbank stroll under twinkling bridges.</li>
+          </ul>
+        </article>
+      </div>
+    </section>
+
+    <section id="activities" class="section">
+      <div class="section-head">
+        <h2>Festive Activities</h2>
+        <div class="accent" aria-hidden="true"></div>
+      </div>
+      <div class="grid">
+        <article class="card" style="grid-column: span 7; padding:18px;">
+          <h3>Ice Skating</h3>
+          <p class="p">Pop‑up rinks rotate yearly (Hôtel de Ville, Grand Palais Éphémère). Reserve when available and bring gloves.</p>
+          <ul class="list">
+            <li class="li">Arrive early; evening sessions are most atmospheric.</li>
+            <li class="li">Lockers often available; carry a 1€ coin just in case.</li>
+          </ul>
+        </article>
+        <article class="card" style="grid-column: span 5; padding:18px;">
+          <h3>Chocolate & Pastry Tasting</h3>
+          <p class="p">Warm up with chocolat chaud à l’ancienne and bûche de Noël slices from renowned pâtisseries.</p>
+          <ul class="list">
+            <li class="li">Look for single‑origin hot chocolates and praline bûches.</li>
+            <li class="li">Pair with marrons glacés for a classic holiday treat.</li>
+          </ul>
+        </article>
+        <article class="card" style="grid-column: span 6; padding:18px;">
+          <h3>Seine Illuminations Cruise</h3>
+          <p class="p">See bridges, the Louvre, and Notre‑Dame lit up from the water; blankets often provided.</p>
+          <ul class="list">
+            <li class="li">Choose a one‑hour cruise at twilight for photos and warmth.</li>
+          </ul>
+        </article>
+        <article class="card" style="grid-column: span 6; padding:18px;">
+          <h3>Holiday Concerts</h3>
+          <p class="p">Classical and choral performances in historic churches create cathedral‑scale acoustics.</p>
+          <ul class="list">
+            <li class="li">Check schedules at La Madeleine, Saint‑Sulpice, or Sainte‑Chapelle.</li>
+          </ul>
+        </article>
+      </div>
+    </section>
+
+    <section id="dining" class="section">
+      <div class="section-head">
+        <h2>Cozy Dining & Drinks</h2>
+        <div class="accent" aria-hidden="true"></div>
+      </div>
+      <div class="grid">
+        <article class="card" style="grid-column: span 7; padding:18px;">
+          <h3>Classic Bistros</h3>
+          <p class="p">Warm interiors, candles, and winter menus: onion soup, boeuf bourguignon, confit de canard.</p>
+          <ul class="list">
+            <li class="li">Reserve for dinner; Parisians dine later on weekends.</li>
+            <li class="li">Request a corner banquette for extra coziness.</li>
+          </ul>
+        </article>
+        <article class="card" style="grid-column: span 5; padding:18px;">
+          <h3>Vin Chaud & Champagne Bars</h3>
+          <p class="p">Sip spiced wine at markets or toast with bubbles along Rue Montorgueil.</p>
+          <ul class="list">
+            <li class="li">Non‑alcoholic options: spiced apple, chocolat viennois.</li>
+          </ul>
+        </article>
+        <article class="card" style="grid-column: span 6; padding:18px;">
+          <h3>Boulangeries & Pâtisseries</h3>
+          <p class="p">Morning kouign‑amann, afternoon éclairs, and seasonal galette des rois in January.</p>
+          <ul class="list">
+            <li class="li">Pick up a festive box for picnics on the Seine.</li>
+          </ul>
+        </article>
+        <article class="card" style="grid-column: span 6; padding:18px;">
+          <h3>Cheese & Charcuterie</h3>
+          <p class="p">Create a market haul: comté, brie
